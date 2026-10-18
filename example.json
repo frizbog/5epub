@@ -1,0 +1,18 @@
+{
+  "title": "Sample Book",
+  "author": "A. Writer",
+  "language": "en",
+  "chapters": [
+    {"id": "intro", "title": "Introduction",
+     "content": "<p>Welcome. See <a href=\"#second\">the next chapter</a> or <a href=\"https://example.com\">a website</a>.</p><p id=\"whale\">A whale.</p>"},
+    {"id": "second", "title": "Second Chapter",
+     "content": "Plain text paragraph one.\n\nParagraph two."}
+  ],
+  "appendices": [
+    {"id": "notes", "title": "Notes", "content": "<p>Back to <a href=\"#intro#whale\">the whale</a>.</p>"}
+  ],
+  "index": [
+    {"term": "Whale", "targets": ["intro#whale"]},
+    {"term": "Notes", "targets": ["notes", "second"]}
+  ]
+}
